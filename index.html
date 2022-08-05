@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="vendor/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="vendor/css/grid.css">
+    <link rel="stylesheet" type="text/css" href="vendor/css/ionicons.min.css">
+
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/querries.css">
+    <title>www.ijamexchange.ng</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="row">
+                <img src="resources/img/logo.webp" class="header-logo">
+                <ul class="btn-nav-btn">
+                    <li>
+                        <a href="#" class="btn btn-sign-up"><i
+                                class="ion-ios-person icon-one icon-sign-up"></i>Sign-Up</a>
+                        <a href="#" class="btn btn-log-in"><i class="ion-arrow-right-a icon-log-in"></i>Log-In</a>
+                    </li>
+                </ul>
+                <ul class="nav-bar js--nav-bar">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Affiliate</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+                <a class="mobile-nav-icon js--mobile-nav-icon"><i class="ion-navicon-round"></i></a>
+            </div>
+        </nav>
+        <section class="exchange-section">
+            <div class="row">
+                <div class="col span-3-of-5">
+                    <div class="form-container">
+                       <div class="sendreceive"> <div id="send">Send</div><div>Receive</div></div>
+                        <div class="select-container">
+                           <div class="selector">
+                                <div id="selectField">
+                                    <p id="selectText">Select What You Have</p>
+                                    <i class="ion-arrow-down-c"></i>
+                                </div>
+                                <!-- <ul id="list" class="hide">
+                                    <li class="options">
+                                        <img src="resources/img/paypal.webp" />
+                                        <p>Paypal</p>
+                                    </li>
+                                    <li class="options">
+                                        <img src="resources/img/Access usd.webp" />
+                                        <p>Access USD</p>
+                                    </li>
+                                    <li class="options">
+                                        <img src="resources/img/naira.webp" />
+                                        <p>Nigeria Naira</p>
+                                    </li>
+                                    <li class="options">
+                                        <img src="resources/img/gtbank.webp" />
+                                        <p>GTB bank</p>
+                                    </li>
+                                    <li class="options">
+                                        <img src="resources/img/payoneer.webp" />
+                                        <p>Payoneer</p>
+                                    </li>
+                                </ul> -->
+                            </div>
+                            <i class="ion-arrow-right-c" id="container-icon"></i>
+                        
+                            <div class="selector">
+                                <div id="selectField">
+                                    <p id="selectText">Select What you want</p>
+                                    <i class="ion-arrow-down-c"></i>
+                                </div>
+                                <!-- <ul id="list" class="hide">
+                                    <li class="options">
+                                        <img src="resources/img/paypal.webp" />
+                                        <p>Paypal</p>
+                                    </li>
+                                    <li class="options">
+                                        <img src="resources/img/Access usd.webp" />
+                                        <p>Access USD</p>
+                                    </li>
+                                    <li class="options">
+                                        <img src="resources/img/naira.webp" />
+                                        <p>Nigeria Naira</p>
+                                    </li>
+                                    <li class="options">
+                                        <img src="resources/img/gtbank.webp" />
+                                        <p>GTB bank</p>
+                                    </li>
+                                    <li class="options">
+                                        <img src="resources/img/payoneer.webp" />
+                                        <p>Payoneer</p>
+                                    </li>
+                                </ul> -->
+                            </div>
+                        </div>
+                        <button class="formbtn" type="button"><i
+                                class="ion-arrow-graph-up-right"></i><strong>Exchange</strong></button>
+                        <div class="form-txt">ATTENTION: We bear PayPal GnS FEE when you sell to us. The higher the
+                            quantity you want to SELL, the higher the rate we will likely BUY, and vice versa. To
+                            learn how to BUY, click <a href="#" class="exchange-link">HERE</a> and to learn how to SELL,
+                            click <a href="" class="exchange-link">HERE.</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-2-of-5">
+                    <table id="container-exchange">
+                        <tr>
+                            <th>E-currencies</th>
+                            <th>Rate we Buy</th>
+                            <th>Rate we Sell</th>
+                        </tr>
+                        <tbody>
+                            <tr class="table-row-white">
+                                <td><a><img src="resources/img/paypal.webp"></img></a>PayPal FnF</td>
+                                <td>N560/$ or +</td>
+                                <td>N600/$ or -</td>
+                            </tr>
+                            <tr class="table-row-color">
+                                <td><a><img src="resources/img/payoneer.webp"></img></a>Payoneer</td>
+                                <td>N570/$ or +</td>
+                                <td>N600/$ or -</td>
+                            </tr>
+                            <tr class="table-row-white">
+                                <td><a><img src="resources/img/skrill.webp"></img></a>Skrill</td>
+                                <td>N550/$ or +</td>
+                                <td>N610/$ or -</td>
+
+                            </tr>
+                            <tr class="table-row-color">
+                                <td><a><img src="resources/img/neteller.webp"></img></a> Neteller</td>
+                                <td>N540/$ or +</td>
+                                <td>N620/$ or -</td>
+                            </tr>
+                            <tr class="table-row-white">
+                                <td><a><img src="resources/img/gns-paypal.webp"></a>PayPal GnS</td>
+                                <td>N510/$ or +</td>
+                                <td>N580/$ or -</td>
+
+                            </tr>
+                            <tr class="table-row-color">
+                                <td><a><img src="resources/img/pm.webp"></img></a> Perfect Money</td>
+                                <td>N585/$ or +</td>
+                                <td>N610/$ or -</td>
+                            </tr>
+                            <!--- <tr class="table-row-white">
+                                <td><a><img src="resources/img/gtbank.webp"></img></a> GTBank USD</td>
+                                <td>N590/$ or +</td>
+                                <td>N610/$ or -</td>
+                            </tr>
+                            <tr class="table-row-color">
+                                <td><a><img src="resources/img/Access usd.webp"></img></a>Access USD</td>
+                                <td>N590/$ or +</td>
+                                <td>N610/$ or -</td>
+                            </tr> ---->
+                            <tr class="table-row-down">
+                                <td colspan="3">+ Represents HIGHER while - Represents LESSER! !!</td>
+                            </tr>
+                            <tr class="table-row-down">
+                                <td colspan="3">We bear PayPal GnS 5% fees when you SELL to us! !!</td>
+                            </tr>
+                            <tr class="table-row-last">
+                                <td colspan="3">Note that the rates stated on this page have a minimum quantity that
+                                    changes from time to time. To know the minimum quantity and other important
+                                    information about it, always try initiating an exchange even without signing up</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </header>
+    <section class="about-us-section js--section-feature">
+        <div class="row">
+            <h3>Why Choose Us&nbsp;<i class="ion-ios-help"></i></h3>
+            <p> We are not just a digital currency or E-currency Exchanger, but also a digital currency or E-currency
+                Consultant with over eleven(11) years of practical experience in the field. We will always be there
+                for you on any issue related to E-currencies different from its BUYING & SELLING! !!
+            </p>
+        </div>
+        <div class="row">
+            <div class="col span-2-of-3 about">
+                <div>
+                    <i class="ion-ios-checkmark icon-about"></i><span>Competitive Exchange Rates:</span> Despite we have
+                    running costs, we still make
+                    our rates reasonable and sometimes, negotiable.
+                </div>
+                <div>
+                    <i class="ion-ios-checkmark icon-about"></i><span>Prompt Order Delivery:</span> Despite the
+                    fluctuating availability
+                    of funds as a result prevalance scarcity, we still
+                    try our best in executing orders on time, along with good follow up
+                </div>
+                <div>
+                    <i class="ion-ios-checkmark icon-about"></i><span>Full Customer Support:</span> We are often
+                    available
+                    on calls, live chat, Whatsapp, facebook, etc. to make sure your experience with us comes out
+                    top-notch.
+                </div>
+                <div>
+                    <i class="ion-ios-checkmark icon-about"></i><span>Quick Recovery:</span> In case you are
+                    experiencing
+                    any difficulties in accessing your account, you can easily reset your password.
+                </div>
+                <div>
+                    <i class="ion-ios-checkmark icon-about"></i><span>Hassle Free:</span> We've tried our
+                    possible best to make sure that the process of buying and selling on our website is as simple as
+                    ABC.
+                </div>
+                <div>
+                    <i class="ion-ios-checkmark icon-about"></i><span>Awesome feedback:</span> We are always often
+                    available
+                    to respond to you on
+                    time, even outside business hours and days
+                </div>
+                <div>
+                    <i class="ion-ios-checkmark icon-about"></i><span>Referral commission: </span> We've made our
+                    referral
+                    system available so that you can start making money as you refer people to us. Start making money
+                    today! !!
+                </div>
+                <div>
+                    <i class="ion-ios-checkmark icon-about"></i><span>Trusted By Many People:</span> We have been in
+                    this business
+                    for quite a long time and the integrity of our brand still stands and keep getting stronger.
+                </div>
+                <div>
+                    <i class="ion-ios-checkmark icon-about"></i><span>Trusted By Many People:</span> We
+                    have been in this business for quite a long time and the integrity of our brand still stands and
+                    keep getting
+                    stronger.
+                </div>
+            </div>
+            <div class="col span-1-of-3">
+                <img src="resources/img/woman.webp" class="about-img" />
+            </div>
+        </div>
+    </section>
+    <section class="section-experience">
+        <div class="row">
+            <div class="col span-1-of-2">
+                <img src="resources/img/time-in-bussiness.jpg" class="experience-img" />
+            </div>
+            <div class="col span-1-of-2">
+                <h2>We're Over 11 Years In Business</h2>
+                <p>We are enterprising and reliable experts in the field of digital
+                    currency exchange. We have been providing fast and quality services
+                    for the past eleven(11) years.
+                </p>
+                <p>
+                    We have the best exchange rates in the market; you can click <a href="#">HERE</a> to see them. We as
+                    well
+                    offer very good affiliate, referral or partnership commission; a whooping 25% referral
+                    commisson as it can be read <a href="#">HERE.</a>
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="feedback-section">
+        <div class="row">
+            <h2><i class="ion-ios-book-outline"></i>&nbsp;&nbsp;Testimonials and Feedbacks&nbsp;&nbsp;<a href="#">3</a>
+            </h2>
+        </div>
+        <div class="row">
+            <div class="col span-1-of-3">
+                <div class="feedback-container">
+                    <div class="name">
+                        <i class="ion-person"></i>Jerry
+                    </div>
+                    <div class="star-icon">
+                        <i class="ion-ios-star"></i><i class="ion-ios-star"></i>
+                        <i class="ion-ios-star"></i>
+                        <i class="ion-ios-star"></i>
+                        <i class="ion-ios-star"></i>
+                    </div>
+                    <div class="feedback-img-div"><a href="#">
+                            <img src="resources/img/naira.webp" class="feedback-img">Naira NGN
+                            <i class="ion-arrow-right-c"></i>
+                            <img src="resources/img/pm.webp" class="feedback-img1">Perfect Money USD
+                        </a>
+                    </div>
+                    <div><b> Opstimistic</b><br></div>
+                    <div>Good </div>
+                    <br><br>
+                </div>
+            </div>
+
+            <div class="col span-1-of-3">
+                <div class="feedback-container">
+                    <div class="name">
+                        <i class="ion-person"></i> Visitor
+                    </div>
+                    <div class="star-icon">
+                        <i class="ion-ios-star"></i><i class="ion-ios-star"></i>
+                        <i class="ion-ios-star"></i>
+                        <i class="ion-ios-star"></i>
+                        <i class="ion-ios-star"></i>
+                    </div>
+                    <div class="feedback-img-div1">
+                        I'm Marvelled and Blown Away
+                    </div>
+                    <div><b></b></div>
+                    <div>I didn't only get a very good but i also got paid naira equivalent within a few minutes.
+                        kudos! !!</div>
+                    <br><br>
+                </div>
+            </div>
+
+            <div class="col span-1-of-3">
+                <div class="feedback-container">
+                    <div class="name">
+                        <i class="ion-person"></i>Ogbonna J.
+                    </div>
+                    <div class="star-icon">
+                        <i class="ion-ios-star"></i><i class="ion-ios-star"></i>
+                        <i class="ion-ios-star"></i>
+                        <i class="ion-ios-star"></i>
+                        <i class="ion-ios-star"></i>
+                    </div>
+                    <div class="feedback-img-div">
+                        <a href="#">
+                            <img src="resources/img/round-circle.webp" class="feedback-img feedback-img-2">GTB USD
+                            <i class="ion-arrow-right-c"></i>
+                            <img src="resources/img/naira.webp" class="feedback-img1">Naira NGN
+                        </a>
+                    </div>
+                    <div> <b>Incredible</b><br></div>
+                    <div>I was initially scared but I sent my dollars and I got my naira in less than 10 minutes.
+                        keep it up ijam! </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section-direction">
+        <div class="row">
+            <h2><i class="ion-arrow-graph-up-right"></i>Our Exchange Directions Of The Week</h2>
+        </div>
+        <div class="row">
+            <table class="direction-table">
+                <thead>
+                    <th><i class="ion-arrow-right-c"></i>Direction</i></th>
+                    <th><i class="ion-arrow-up-c"></i>Total Sent</th>
+                    <th><i class="ion-arrow-down-c"></i>Total Received</th>
+                    <th><i class="ion-arrow-swap"></i>Exchange</th>
+                </thead>
+                <tbody class="table-body">
+                    <tr>
+                        <td>
+                            <div class="table-img-div">
+                                <img src="resources/img/pm.webp" class="table-img">&nbsp;&nbsp;Perfect Money USD
+                                <i class="ion-arrow-right-c"></i>
+                                <img src="resources/img/naira.webp" class="table-img">Naira NGN
+                            </div>
+                        </td>
+                        <td>
+                            179.00 USD
+                        </td>
+                        <td>
+                            104715.00 NGN
+                        </td>
+                        <td>
+                            <a class="" href="#"><i class="ion-arrow-swap"></i>Exchange</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="table-img-div">
+                                <img src="resources/img/naira.webp" class="table-img">Naira NGN
+                                <i class="ion-arrow-right-c"></i>
+                                <img src="resources/img/skrill.webp" class="table-img">&nbsp;&nbsp;Skrill USD
+
+                            </div>
+                        </td>
+
+                        <td>
+                            68500.00 NGN
+                        </td>
+                        <td>
+                            112.63 USD
+                        </td>
+                        <td>
+                            <a class="" href="#"><i class="ion-arrow-swap"></i>Exchange</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </section>
+
+    <footer class="section-footer">
+        <div class="row">
+            <div class="col span-1-of-2">
+                <div class="containers">
+                    <div class="container">
+                        <h1>About Us</h1>
+                        <p>We are an enterprising and reliable experts in the
+                            field of digital currency exchange. We have been providing
+                            fast and quality services for the past eleven(11) years
+                        </p>
+                    </div>
+                    <div class="container">
+                        <h1>Resources</h1>
+                        <ul class="resources-list">
+                            <li><a href="">AML Policy</a></li>
+                            <li><a href="">Refund Policy</a></li>
+                            <li><a href="">News</a></li>
+                            <li><a href="">Terms & Conditions</a></li>
+                            <li><a href="">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col span-1-of-2">
+                <div class="containers">
+                    <div class="container">
+                        <h1>Contact Us</h1>
+                        <div>
+                            <i class="ion-android-call"></i>&nbsp;
+                            <i class="ion-social-whatsapp-outline"></i> &nbsp;+2348091833866
+                        </div>
+                        <div>
+                            <i class="ion-android-call"></i>&nbsp;
+                            <i class="ion-social-whatsapp-outline"></i>&nbsp;+23412931906
+                        </div>
+                        <div>
+                            <i class="ion-ios-email-outline icon-mail"></i> supporti@jamexchange.ng
+                        </div>
+                        <div>
+                            <p> <i class="ion-android-pin"></i> 71a Shyllon Street. Palmgrove,
+                                Lagos. We are also available in Abuja for some exchange transactions! !</p>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <h1>Follow Us</h1>
+                        <ul class="follow-list">
+                            <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+                            <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+                            <li><a href="#"><i class="ion-social-rss"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <p class="all-right"> © 2022 IJAM Exchange Limited - All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="./vendor/js/jquery.waypoints.min.js"></script>
+    <script src="./resources/js/script.js"></script>
+
+    
+
+  
+
+    <script>  
+        var selectField = document.getElementById("selectField");
+        var selectText = document.getElementById("selectText");
+        var options = document.getElementsByClassName("options");
+        var list = document.getElementById("list");
+
+        selectField.onclick = function(){
+            list.classList.toggle("hide");
+        }
+    
+      for(option of options){
+        option.onclick = function(){
+            selectText.innerHTML = this.textContent;
+            list.classList.toggle("hide");
+        }
+      }
+    </script>
+
+</body>
+
+</html>
